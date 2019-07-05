@@ -1,0 +1,149 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script src="js/jquery.js"></script>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+<title>精英鸿泰</title>
+<link href="style.css" rel="stylesheet" type="text/css" />
+<!--[if IE 6]>
+<script type="text/javascript" src="js/Png.js"></script>
+<script type="text/javascript">
+//window.open("20111231/zhici.htm","","width=800,height=600,toolbar=no,menubar=no, scrollbars=yes, resizable=yes, location=no, status=no");
+EvPNG.fix('div, ul, img, li, input, a');
+</script>
+<![endif]-->
+<script type="text/javascript">(function($){$.fn.albumSlider=function(j){return this.each(function(){var b=$.extend({step:2,imgContainer:'div.fullview',listContainer:'ul.imglist',event:'mouseover',direction:'v'},j||{});var c=$(b.imgContainer,this),$list=$(b.listContainer,this),currId=0,currPage=0,size=$list.children().length-1,pageSize=Math.floor(size/b.step);var f=b.direction=='v';var g=f?'top':'left';var h=(size>=b.step)?$('li',$list).eq(b.step).offset()[g]-$('li',$list).eq(0).offset()[g]:0;var i=function(){var a=$(this);if(a.is('.current')){return false}$('img',c).fadeOut(800,function(){$(this).remove()});$('<img>').hide().attr('src',$('a',a).attr('href')).appendTo(c).fadeIn(800);a.addClass('current').siblings().removeClass('current');return false};$.proxy(i,$('li',$list).eq(0))();$list.delegate('li',b.event,$.proxy(i)).bind('moveforward movebackward',function(e){var a=e.type=='moveforward';if(a){currId+=b.step;if(currId>size){currId=size}if(++currPage>pageSize){currPage=pageSize;return false}}else{currId-=b.step;if(currId<0){currId=0}if(--currPage<0){currPage=0;return false}};var d=(a?'-=':'+=')+h;$(this).stop(true,true).animate(f?{top:d}:{left:d},500,function(){$.proxy(i,$('li',$list).eq(currId))()})});$('div.button',this).click(function(){$list.trigger($(this).is('.moveforward')?'moveforward':'movebackward')})})}})(jQuery);</script>
+<script type="text/javascript">
+$(function(){
+	//纵向，默认，移动间隔2
+    $('div.albumSlider').albumSlider();
+    //横向设置
+    $('div.albumSlider-h').albumSlider({direction:'h',step:1});
+});
+</script>
+</head>
+<style>
+.newproduct{ width:232px; margin-top:13px;}
+.newproduct_title{ width:218px; padding-left:14px; height:34px; line-height:34px; overflow:hidden; background-image:url(images/newproduct.jpg); font-family:"微软雅黑"; color:#585e5e; font-size:14px;}
+.newproduct_content{ width:200px; padding-left:15px; padding-right:15px; padding-top:15px; padding-bottom:5px; border-left:1px solid #cadede; border-right:1px solid #cadede; border-bottom:1px solid #cadede;}
+.newproduct_content_img{ width:200px;}
+.newproduct_content_img img{ padding:1px; border:1px solid #b5b5b5;}
+.newproduct_content_name{ width:200px; height:38px; line-height:35px; text-align:center;}
+.newproduct_content_name a{ color:#7f7f7f; font-family:"微软雅黑";}
+.newproduct_content_name a:hover{ color:#781824;}
+.productbg{ background-image:url(images/bg_branch2.jpg);}
+.albumSlider-h img{ display:inline;}
+.albumSlider-h {width:570px;background:#9c2; margin:0 auto; padding:10px; font-size:10px;
+	position:relative;}
+.albumSlider-h .fullview{position:relative;}
+.albumSlider-h .fullview,
+.albumSlider-h .fullview img {width:570px; height:300px;}
+	.albumSlider-h .fullview img {position:absolute; top:0; left:0;}
+.albumSlider-h .button, 
+.albumSlider-h .imglistwrap{float:left; display:inline;}
+.albumSlider-h .slider{width: auto;height:76px;margin-top:1em;background:#fff;padding-left:3px;}
+		.albumSlider-h .imglistwrap{height:69px;width:510px;overflow:hidden;position:relative;}
+	.albumSlider-h .imglist{position: relative;width:999em;}
+	.albumSlider-h li{float: left;margin:0 3px;}
+	.albumSlider-h li img{width:90px;height:56px;margin:9px 0 0 2px;border:1px solid #a0cc4d;}
+	.albumSlider-h a{width:96px;height:69px;display:block; outline:none;}
+	.albumSlider-h li a:hover,
+	.albumSlider-h li.current a{background:url(images/album-slider-arrow-h.png) no-repeat 0 0;}
+.albumSlider-h .button {height:76px;width:16px;margin:0 5px;
+	background:url(images/album-slider-button-h.png) no-repeat 100% 50% ;cursor:pointer;}
+		.albumSlider-h .movebackward{background-position: 0 50%;}
+</style>
+<body id="nav3">
+<div class="january">
+	<div class="january_inner">
+    	<div class="january_inner_logo fl"><a href="index.html"><img src="images/logo.jpg" /></a></div>
+        <ul class="janyary_inner_nav fr">
+        	<li class="nav1"><a href="index.html">首页</a></li>
+            <li class="nav2"><a href="about.html">关于我们</a></li>
+            <li class="nav3"><a href="product.html">产品中心</a></li>
+            <li class="nav4"><a href="news.html">新闻资讯</a></li>
+            <li class="nav5"><a href="client.html">客户服务</a></li>
+            <li class="nav6"><a href="vip.html">会员专区</a></li>
+            <li class="nav7"><a href="contact.html">联系方式</a></li>
+        </ul>
+    </div>
+</div>
+<div class="banner_rev">
+<div class="banner">
+<div class="mCon_leftBtn" onmousedown="ISL_GoUp()" onmouseup="ISL_StopUp()" onmouseout="ISL_StopUp()" style="cursor:pointer"></div>
+<div class="mCon_rightBtn" onmousedown="ISL_GoDown()" onmouseup="ISL_StopDown()" onmouseout="ISL_StopDown()" style="cursor:pointer"></div>
+<div class="ban_btnL"><img src="images/mbtnL.png" width="35" height="50" /></div>
+<div class="ban_btnR"><img src="images/mbtnR.png" width="35" height="50" /></div>
+<div class="banPos" id="ISL_Cont">
+<div class="banCon">
+<ul id="List1">
+<li><a href="###"><img height="382" width="1440" src="images/banner1.jpg" /></a></li><li><a href="###"><img height="382" width="1440" src="images/banner2.jpg" /></a></li>				
+</ul>
+<ul id="List2"></ul>
+</div>
+</div>
+</div>
+</div>
+<div class="march about_out">
+	<div class="about">
+    	<div class="about_left">
+        	<div class="about_left_choose">
+            	<h1>产品中心</h1>
+                <dl>
+                	<dd class="about_left_choose_current"><a href="###">床上用品系列</a></dd>
+                    <dd><a href="###">酒柜系列</a></dd>
+                    <dd><a href="###">冷藏箱系列</a></dd>
+                </dl>
+            </div>
+            <div class="newproduct">
+            	<h1 class="newproduct_title">最新产品</h1>
+                <div class="newproduct_content">
+                	<div class="newproduct_content_img"><a href="###"><img src="images/newproduct1.jpg" /></a></div>
+                    <p class="newproduct_content_name"><a href="###">产品名称信息</a></p>
+                    <div class="newproduct_content_img"><a href="###"><img src="images/newproduct2.jpg" /></a></div>
+                    <p class="newproduct_content_name"><a href="###">产品名称信息</a></p>
+                </div>
+            </div>
+            <div class="about_left_choose_hot"><a href="###"><img src="images/hotline2.jpg" /></a></div>
+        </div>
+        <div class="about_right">
+        	<div class="about_right_title productbg"><span class="more"><a href="###">首页</a> > <a href="###">产品中心</a> > <a class="about_right_current" href="###">床上用品系列</a></span>产品中心<span class="star">★★★★★</span></div>
+            <div class="about_right_content">
+            	
+                
+<div class="clearfix albumSlider-h">
+  <div class="fullview"> <img src="images/b001.jpg" alt="" /> </div>
+  <div class="slider">
+    <div class="button movebackward" title="向左滚动"></div>
+    <div class="imglistwrap"><ul class="imglist">
+      <li><a href="images/b001.jpg"><img src="images/001.jpg" alt="" /></a></li>
+      <li><a href="images/b002.jpg"><img src="images/002.jpg" alt="" /></a></li>
+      <li><a href="images/b003.jpg"><img src="images/003.jpg" alt="" /></a></li>
+      <li><a href="images/b004.jpg"><img src="images/004.jpg" alt="" /></a></li>
+      <li><a href="images/b001.jpg"><img src="images/001.jpg" alt="" /></a></li>
+      <li><a href="images/b002.jpg"><img src="images/002.jpg" alt="" /></a></li>
+      <li><a href="images/b003.jpg"><img src="images/003.jpg" alt="" /></a></li>
+      <li><a href="images/b004.jpg"><img src="images/004.jpg" alt="" /></a></li>
+      <li><a href="images/b001.jpg"><img src="images/001.jpg" alt="" /></a></li>
+      <li><a href="images/b002.jpg"><img src="images/002.jpg" alt="" /></a></li>
+      <li><a href="images/b003.jpg"><img src="images/003.jpg" alt="" /></a></li>
+    </ul></div>
+    <div class="button moveforward" title="向右滚动"></div>
+  </div>
+</div>
+                
+                
+                
+            </div>
+        </div>
+    </div>
+</div>
+<div class="april">
+	<div class="april_nav"><a href="about.html">关于我们</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="product.html">产品中心</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="news.html">新闻资讯</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="client.html">客户服务</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="vip.html">会员专区</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="contact.html">联系方式</a><br />
+    版权所有：精英鸿泰国际贸易有限公司&nbsp;&nbsp;地址：海淀区大钟寺华杰大厦4B10室&nbsp;&nbsp;&nbsp;电话：010-65132366  010-65132366&nbsp;&nbsp;&nbsp;传真：010-65132366&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;北京网站建设：联合易网</div>
+</div>
+<script src="js/public.js"></script>
+<script src="js/clgai.js"></script>
+</body>
+</html>
