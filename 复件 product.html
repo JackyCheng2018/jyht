@@ -2,9 +2,9 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <script src="js/jquery.js"></script>
-<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
-<title>¾«Ó¢ºèÌ©</title>
+<title>ç²¾è‹±é¸¿æ³°</title>
 <link href="style.css" rel="stylesheet" type="text/css" />
 <!--[if IE 6]>
 <script type="text/javascript" src="js/Png.js"></script>
@@ -16,21 +16,21 @@ EvPNG.fix('div, ul, img, li, input, a');
 <script type="text/javascript">(function($){$.fn.albumSlider=function(j){return this.each(function(){var b=$.extend({step:2,imgContainer:'div.fullview',listContainer:'ul.imglist',event:'mouseover',direction:'v'},j||{});var c=$(b.imgContainer,this),$list=$(b.listContainer,this),currId=0,currPage=0,size=$list.children().length-1,pageSize=Math.floor(size/b.step);var f=b.direction=='v';var g=f?'top':'left';var h=(size>=b.step)?$('li',$list).eq(b.step).offset()[g]-$('li',$list).eq(0).offset()[g]:0;var i=function(){var a=$(this);if(a.is('.current')){return false}$('img',c).fadeOut(800,function(){$(this).remove()});$('<img>').hide().attr('src',$('a',a).attr('href')).appendTo(c).fadeIn(800);a.addClass('current').siblings().removeClass('current');return false};$.proxy(i,$('li',$list).eq(0))();$list.delegate('li',b.event,$.proxy(i)).bind('moveforward movebackward',function(e){var a=e.type=='moveforward';if(a){currId+=b.step;if(currId>size){currId=size}if(++currPage>pageSize){currPage=pageSize;return false}}else{currId-=b.step;if(currId<0){currId=0}if(--currPage<0){currPage=0;return false}};var d=(a?'-=':'+=')+h;$(this).stop(true,true).animate(f?{top:d}:{left:d},500,function(){$.proxy(i,$('li',$list).eq(currId))()})});$('div.button',this).click(function(){$list.trigger($(this).is('.moveforward')?'moveforward':'movebackward')})})}})(jQuery);</script>
 <script type="text/javascript">
 $(function(){
-	//×İÏò£¬Ä¬ÈÏ£¬ÒÆ¶¯¼ä¸ô2
+	//çºµå‘ï¼Œé»˜è®¤ï¼Œç§»åŠ¨é—´éš”2
     $('div.albumSlider').albumSlider();
-    //ºáÏòÉèÖÃ
+    //æ¨ªå‘è®¾ç½®
     $('div.albumSlider-h').albumSlider({direction:'h',step:1});
 });
 </script>
 </head>
 <style>
 .newproduct{ width:232px; margin-top:13px;}
-.newproduct_title{ width:218px; padding-left:14px; height:34px; line-height:34px; overflow:hidden; background-image:url(images/newproduct.jpg); font-family:"Î¢ÈíÑÅºÚ"; color:#585e5e; font-size:14px;}
+.newproduct_title{ width:218px; padding-left:14px; height:34px; line-height:34px; overflow:hidden; background-image:url(images/newproduct.jpg); font-family:"å¾®è½¯é›…é»‘"; color:#585e5e; font-size:14px;}
 .newproduct_content{ width:200px; padding-left:15px; padding-right:15px; padding-top:15px; padding-bottom:5px; border-left:1px solid #cadede; border-right:1px solid #cadede; border-bottom:1px solid #cadede;}
 .newproduct_content_img{ width:200px;}
 .newproduct_content_img img{ padding:1px; border:1px solid #b5b5b5;}
 .newproduct_content_name{ width:200px; height:38px; line-height:35px; text-align:center;}
-.newproduct_content_name a{ color:#7f7f7f; font-family:"Î¢ÈíÑÅºÚ";}
+.newproduct_content_name a{ color:#7f7f7f; font-family:"å¾®è½¯é›…é»‘";}
 .newproduct_content_name a:hover{ color:#781824;}
 .productbg{ background-image:url(images/bg_branch2.jpg);}
 .albumSlider-h img{ display:inline;}
@@ -59,13 +59,13 @@ $(function(){
 	<div class="january_inner">
     	<div class="january_inner_logo fl"><a href="index.html"><img src="images/logo.jpg" /></a></div>
         <ul class="janyary_inner_nav fr">
-        	<li class="nav1"><a href="index.html">Ê×Ò³</a></li>
-            <li class="nav2"><a href="about.html">¹ØÓÚÎÒÃÇ</a></li>
-            <li class="nav3"><a href="product.html">²úÆ·ÖĞĞÄ</a></li>
-            <li class="nav4"><a href="news.html">ĞÂÎÅ×ÊÑ¶</a></li>
-            <li class="nav5"><a href="client.html">¿Í»§·şÎñ</a></li>
-            <li class="nav6"><a href="vip.html">»áÔ±×¨Çø</a></li>
-            <li class="nav7"><a href="contact.html">ÁªÏµ·½Ê½</a></li>
+        	<li class="nav1"><a href="index.html">é¦–é¡µ</a></li>
+            <li class="nav2"><a href="about.html">å…³äºæˆ‘ä»¬</a></li>
+            <li class="nav3"><a href="product.html">äº§å“ä¸­å¿ƒ</a></li>
+            <li class="nav4"><a href="news.html">æ–°é—»èµ„è®¯</a></li>
+            <li class="nav5"><a href="client.html">å®¢æˆ·æœåŠ¡</a></li>
+            <li class="nav6"><a href="vip.html">ä¼šå‘˜ä¸“åŒº</a></li>
+            <li class="nav7"><a href="contact.html">è”ç³»æ–¹å¼</a></li>
         </ul>
     </div>
 </div>
@@ -89,33 +89,33 @@ $(function(){
 	<div class="about">
     	<div class="about_left">
         	<div class="about_left_choose">
-            	<h1>²úÆ·ÖĞĞÄ</h1>
+            	<h1>äº§å“ä¸­å¿ƒ</h1>
                 <dl>
-                	<dd class="about_left_choose_current"><a href="###">´²ÉÏÓÃÆ·ÏµÁĞ</a></dd>
-                    <dd><a href="###">¾Æ¹ñÏµÁĞ</a></dd>
-                    <dd><a href="###">Àä²ØÏäÏµÁĞ</a></dd>
+                	<dd class="about_left_choose_current"><a href="###">åºŠä¸Šç”¨å“ç³»åˆ—</a></dd>
+                    <dd><a href="###">é…’æŸœç³»åˆ—</a></dd>
+                    <dd><a href="###">å†·è—ç®±ç³»åˆ—</a></dd>
                 </dl>
             </div>
             <div class="newproduct">
-            	<h1 class="newproduct_title">×îĞÂ²úÆ·</h1>
+            	<h1 class="newproduct_title">æœ€æ–°äº§å“</h1>
                 <div class="newproduct_content">
                 	<div class="newproduct_content_img"><a href="###"><img src="images/newproduct1.jpg" /></a></div>
-                    <p class="newproduct_content_name"><a href="###">²úÆ·Ãû³ÆĞÅÏ¢</a></p>
+                    <p class="newproduct_content_name"><a href="###">äº§å“åç§°ä¿¡æ¯</a></p>
                     <div class="newproduct_content_img"><a href="###"><img src="images/newproduct2.jpg" /></a></div>
-                    <p class="newproduct_content_name"><a href="###">²úÆ·Ãû³ÆĞÅÏ¢</a></p>
+                    <p class="newproduct_content_name"><a href="###">äº§å“åç§°ä¿¡æ¯</a></p>
                 </div>
             </div>
             <div class="about_left_choose_hot"><a href="###"><img src="images/hotline2.jpg" /></a></div>
         </div>
         <div class="about_right">
-        	<div class="about_right_title productbg"><span class="more"><a href="###">Ê×Ò³</a> > <a href="###">²úÆ·ÖĞĞÄ</a> > <a class="about_right_current" href="###">´²ÉÏÓÃÆ·ÏµÁĞ</a></span>²úÆ·ÖĞĞÄ<span class="star">¡ï¡ï¡ï¡ï¡ï</span></div>
+        	<div class="about_right_title productbg"><span class="more"><a href="###">é¦–é¡µ</a> > <a href="###">äº§å“ä¸­å¿ƒ</a> > <a class="about_right_current" href="###">åºŠä¸Šç”¨å“ç³»åˆ—</a></span>äº§å“ä¸­å¿ƒ<span class="star">â˜…â˜…â˜…â˜…â˜…</span></div>
             <div class="about_right_content">
             	
                 
 <div class="clearfix albumSlider-h">
   <div class="fullview"> <img src="images/b001.jpg" alt="" /> </div>
   <div class="slider">
-    <div class="button movebackward" title="Ïò×ó¹ö¶¯"></div>
+    <div class="button movebackward" title="å‘å·¦æ»šåŠ¨"></div>
     <div class="imglistwrap"><ul class="imglist">
       <li><a href="images/b001.jpg"><img src="images/001.jpg" alt="" /></a></li>
       <li><a href="images/b002.jpg"><img src="images/002.jpg" alt="" /></a></li>
@@ -129,7 +129,7 @@ $(function(){
       <li><a href="images/b002.jpg"><img src="images/002.jpg" alt="" /></a></li>
       <li><a href="images/b003.jpg"><img src="images/003.jpg" alt="" /></a></li>
     </ul></div>
-    <div class="button moveforward" title="ÏòÓÒ¹ö¶¯"></div>
+    <div class="button moveforward" title="å‘å³æ»šåŠ¨"></div>
   </div>
 </div>
                 
@@ -140,8 +140,8 @@ $(function(){
     </div>
 </div>
 <div class="april">
-	<div class="april_nav"><a href="about.html">¹ØÓÚÎÒÃÇ</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="product.html">²úÆ·ÖĞĞÄ</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="news.html">ĞÂÎÅ×ÊÑ¶</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="client.html">¿Í»§·şÎñ</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="vip.html">»áÔ±×¨Çø</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="contact.html">ÁªÏµ·½Ê½</a><br />
-    °æÈ¨ËùÓĞ£º¾«Ó¢ºèÌ©¹ú¼ÊÃ³Ò×ÓĞÏŞ¹«Ë¾&nbsp;&nbsp;µØÖ·£ºº£µíÇø´óÖÓËÂ»ª½Ü´óÏÃ4B10ÊÒ&nbsp;&nbsp;&nbsp;µç»°£º010-65132366  010-65132366&nbsp;&nbsp;&nbsp;´«Õæ£º010-65132366&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;±±¾©ÍøÕ¾½¨Éè£ºÁªºÏÒ×Íø</div>
+	<div class="april_nav"><a href="about.html">å…³äºæˆ‘ä»¬</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="product.html">äº§å“ä¸­å¿ƒ</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="news.html">æ–°é—»èµ„è®¯</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="client.html">å®¢æˆ·æœåŠ¡</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="vip.html">ä¼šå‘˜ä¸“åŒº</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="contact.html">è”ç³»æ–¹å¼</a><br />
+    ç‰ˆæƒæ‰€æœ‰ï¼šç²¾è‹±é¸¿æ³°å›½é™…è´¸æ˜“æœ‰é™å…¬å¸&nbsp;&nbsp;åœ°å€ï¼šæµ·æ·€åŒºå¤§é’Ÿå¯ºåæ°å¤§å¦4B10å®¤&nbsp;&nbsp;&nbsp;ç”µè¯ï¼š010-65132366  010-65132366&nbsp;&nbsp;&nbsp;ä¼ çœŸï¼š010-65132366&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;åŒ—äº¬ç½‘ç«™å»ºè®¾ï¼šè”åˆæ˜“ç½‘</div>
 </div>
 <script src="js/public.js"></script>
 <script src="js/clgai.js"></script>

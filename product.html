@@ -2,9 +2,9 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <script src="js/jquery.js"></script>
-<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
-<title>��Ӣ��̩</title>
+<title>精英鸿泰</title>
 <link href="style.css" rel="stylesheet" type="text/css" />
 <!--[if IE 6]>
 <script type="text/javascript" src="js/Png.js"></script>
@@ -16,9 +16,9 @@ EvPNG.fix('div, ul, img, li, input, a');
 <script type="text/javascript">(function($){$.fn.albumSlider=function(j){return this.each(function(){var b=$.extend({step:2,imgContainer:'div.fullview',listContainer:'ul.imglist',event:'mouseover',direction:'v'},j||{});var c=$(b.imgContainer,this),$list=$(b.listContainer,this),currId=0,currPage=0,size=$list.children().length-1,pageSize=Math.floor(size/b.step);var f=b.direction=='v';var g=f?'top':'left';var h=(size>=b.step)?$('li',$list).eq(b.step).offset()[g]-$('li',$list).eq(0).offset()[g]:0;var i=function(){var a=$(this);if(a.is('.current')){return false}$('img',c).fadeOut(800,function(){$(this).remove()});$('<img>').hide().attr('src',$('a',a).attr('href')).appendTo(c).fadeIn(800);a.addClass('current').siblings().removeClass('current');return false};$.proxy(i,$('li',$list).eq(0))();$list.delegate('li',b.event,$.proxy(i)).bind('moveforward movebackward',function(e){var a=e.type=='moveforward';if(a){currId+=b.step;if(currId>size){currId=size}if(++currPage>pageSize){currPage=pageSize;return false}}else{currId-=b.step;if(currId<0){currId=0}if(--currPage<0){currPage=0;return false}};var d=(a?'-=':'+=')+h;$(this).stop(true,true).animate(f?{top:d}:{left:d},500,function(){$.proxy(i,$('li',$list).eq(currId))()})});$('div.button',this).click(function(){$list.trigger($(this).is('.moveforward')?'moveforward':'movebackward')})})}})(jQuery);</script>
 <script type="text/javascript">
 $(function(){
-	//����Ĭ�ϣ��ƶ����2
+	//纵向，默认，移动间隔2
     $('div.albumSlider').albumSlider();
-    //��������
+    //横向设置
     $('div.albumSlider-h').albumSlider({direction:'h',step:2});
 });
 </script>
@@ -29,13 +29,13 @@ $(function(){
 	<div class="january_inner">
     	<div class="january_inner_logo fl"><a href="index.html"><img src="images/logo.jpg" /></a></div>
         <ul class="janyary_inner_nav fr">
-        	<li class="nav1"><a href="index.html">��ҳ</a></li>
-            <li class="nav2"><a href="about.html">��������</a></li>
-            <li class="nav3"><a href="product.html">��Ʒ����</a></li>
-            <li class="nav4"><a href="news.html">������Ѷ</a></li>
-            <li class="nav5"><a href="client.html">�ͻ�����</a></li>
-            <li class="nav6"><a href="vip.html">��Աר��</a></li>
-            <li class="nav7"><a href="contact.html">��ϵ��ʽ</a></li>
+        	<li class="nav1"><a href="index.html">首页</a></li>
+            <li class="nav2"><a href="about.html">关于我们</a></li>
+            <li class="nav3"><a href="product.html">产品中心</a></li>
+            <li class="nav4"><a href="news.html">新闻资讯</a></li>
+            <li class="nav5"><a href="client.html">客户服务</a></li>
+            <li class="nav6"><a href="vip.html">会员专区</a></li>
+            <li class="nav7"><a href="contact.html">联系方式</a></li>
         </ul>
     </div>
 </div>
@@ -59,31 +59,31 @@ $(function(){
 	<div class="about">
     	<div class="about_left">
         	<div class="about_left_choose">
-            	<h1>��Ʒ����</h1>
+            	<h1>产品中心</h1>
                 <dl>
-                	<dd class="about_left_choose_current"><a href="###">������Ʒϵ��</a></dd>
-                    <dd><a href="###">�ƹ�ϵ��</a></dd>
-                    <dd><a href="###">�����ϵ��</a></dd>
+                	<dd class="about_left_choose_current"><a href="###">床上用品系列</a></dd>
+                    <dd><a href="###">酒柜系列</a></dd>
+                    <dd><a href="###">冷藏箱系列</a></dd>
                 </dl>
             </div>
             <div class="newproduct">
-            	<h1 class="newproduct_title">���²�Ʒ</h1>
+            	<h1 class="newproduct_title">最新产品</h1>
                 <div class="newproduct_content">
                 	<div class="newproduct_content_img"><a href="product_nr.html"><img src="images/newproduct1.jpg" /></a></div>
-                    <p class="newproduct_content_name"><a href="product_nr.html">��Ʒ������Ϣ</a></p>
+                    <p class="newproduct_content_name"><a href="product_nr.html">产品名称信息</a></p>
                     <div class="newproduct_content_img"><a href="###"><img src="images/newproduct2.jpg" /></a></div>
-                    <p class="newproduct_content_name"><a href="###">��Ʒ������Ϣ</a></p>
+                    <p class="newproduct_content_name"><a href="###">产品名称信息</a></p>
                 </div>
             </div>
             <div class="about_left_choose_hot"><a href="###"><img src="images/hotline2.jpg" /></a></div>
         </div>
         <div class="about_right">
-        	<div class="about_right_title productbg"><span class="more"><a href="###">��ҳ</a> > <a href="###">��Ʒ����</a> > <a class="about_right_current" href="###">������Ʒϵ��</a></span>��Ʒ����<span class="star">������</span></div>
+        	<div class="about_right_title productbg"><span class="more"><a href="###">首页</a> > <a href="###">产品中心</a> > <a class="about_right_current" href="###">床上用品系列</a></span>产品中心<span class="star">★★★★★</span></div>
             <div class="about_right_content">      
                 <div class="clearfix albumSlider-h">
                   <div class="fullview"> <img src="images/chanpin1.jpg" alt="" /> </div>
                   <div class="slider">
-                    <div class="button movebackward" title="�������"></div>
+                    <div class="button movebackward" title="向左滚动"></div>
                     <div class="imglistwrap"><ul class="imglist">
                       <li><a href="images/chanpin1.jpg"><img src="images/chanpin01.jpg" alt="" /></a></li>
                       <li><a href="images/chanpin2.jpg"><img src="images/chanpin02.jpg" alt="" /></a></li>
@@ -97,45 +97,45 @@ $(function(){
                       <li><a href="images/chanpin2.jpg"><img src="images/chanpin02.jpg" alt="" /></a></li>
                       <li><a href="images/chanpin3.jpg"><img src="images/chanpin03.jpg" alt="" /></a></li>
                     </ul></div>
-                    <div class="button moveforward" title="���ҹ���"></div>
+                    <div class="button moveforward" title="向右滚动"></div>
                   </div>
                 </div>
                 <div class="product_fen">
                 	<ul class="product_fen_title">
-                    	<li class="product_fen_title_current"><a href="###">������Ʒ</a></li>
-                        <li><a href="###">�ƹ�</a></li>
-                        <li><a href="###">���ϵ��</a></li>
-                        <li><a href="###">һϵ��</a></li>
+                    	<li class="product_fen_title_current"><a href="###">床上用品</a></li>
+                        <li><a href="###">酒柜</a></li>
+                        <li><a href="###">冷藏系列</a></li>
+                        <li><a href="###">一系列</a></li>
                     </ul>
                     <div class="product_fen_content xianwei1">
                     	<ul class="product_fen_content_1">
                         	<li>
                             	<div><a href="product_nr.html"><img src="images/newproduct_1.jpg" /></a></div>
-                                <p class="zhong"><a href="product_nr.html">��ά��</a></p>
-                                <p class="zuo"><a href="###">���Ż���ʽ��Ʒ�ļ���</a></p>
-                                <p class="zuo"><a href="###">ݫ�ľ���������׸ߵ���Ʒ</a></p>
-                                <p class="zuo"><a href="###">���л�����ӡ���ļ���ȫ��</a></p>
+                                <p class="zhong"><a href="product_nr.html">纤维被</a></p>
+                                <p class="zuo"><a href="###">淡雅花朵式床品四件套</a></p>
+                                <p class="zuo"><a href="###">莴苣玖醉南五件套高档床品</a></p>
+                                <p class="zuo"><a href="###">梦中花活性印花四件套全棉</a></p>
                             </li>
                             <li>
                             	<div><a href="###"><img src="images/newproduct_2.jpg" /></a></div>
-                                <p class="zhong"><a href="###">����ҷ�</a></p>
-                                <p class="zuo"><a href="###">���Ż���ʽ��Ʒ�ļ���</a></p>
-                                <p class="zuo"><a href="###">ݫ�ľ���������׸ߵ���Ʒ</a></p>
-                                <p class="zuo"><a href="###">���л�����ӡ���ļ���ȫ��</a></p>
+                                <p class="zhong"><a href="###">博洋家纺</a></p>
+                                <p class="zuo"><a href="###">淡雅花朵式床品四件套</a></p>
+                                <p class="zuo"><a href="###">莴苣玖醉南五件套高档床品</a></p>
+                                <p class="zuo"><a href="###">梦中花活性印花四件套全棉</a></p>
                             </li>
                             <li>
                             	<div><a href="###"><img src="images/newproduct_1.jpg" /></a></div>
-                                <p class="zhong"><a href="###">��ά��</a></p>
-                                <p class="zuo"><a href="###">���Ż���ʽ��Ʒ�ļ���</a></p>
-                                <p class="zuo"><a href="###">ݫ�ľ���������׸ߵ���Ʒ</a></p>
-                                <p class="zuo"><a href="###">���л�����ӡ���ļ���ȫ��</a></p>
+                                <p class="zhong"><a href="###">纤维被</a></p>
+                                <p class="zuo"><a href="###">淡雅花朵式床品四件套</a></p>
+                                <p class="zuo"><a href="###">莴苣玖醉南五件套高档床品</a></p>
+                                <p class="zuo"><a href="###">梦中花活性印花四件套全棉</a></p>
                             </li>
                             <li>
                             	<div><a href="###"><img src="images/newproduct_3.jpg" /></a></div>
-                                <p class="zhong"><a href="###">����ҷ�</a></p>
-                                <p class="zuo"><a href="###">���Ż���ʽ��Ʒ�ļ���</a></p>
-                                <p class="zuo"><a href="###">ݫ�ľ���������׸ߵ���Ʒ</a></p>
-                                <p class="zuo"><a href="###">���л�����ӡ���ļ���ȫ��</a></p>
+                                <p class="zhong"><a href="###">博洋家纺</a></p>
+                                <p class="zuo"><a href="###">淡雅花朵式床品四件套</a></p>
+                                <p class="zuo"><a href="###">莴苣玖醉南五件套高档床品</a></p>
+                                <p class="zuo"><a href="###">梦中花活性印花四件套全棉</a></p>
                             </li>
                         </ul>
                         <div class="product_fen_content_2"><a class="ye_current" href="###">1</a><a href="###">2</a><a href="###">3</a><a href="###">4</a></div>
@@ -144,31 +144,31 @@ $(function(){
                     	<ul class="product_fen_content_1">
                         	<li>
                             	<div><a href="###"><img src="images/newproduct_3.jpg" /></a></div>
-                                <p class="zhong"><a href="###">����ҷ�</a></p>
-                                <p class="zuo"><a href="###">���Ż���ʽ��Ʒ�ļ���</a></p>
-                                <p class="zuo"><a href="###">ݫ�ľ���������׸ߵ���Ʒ</a></p>
-                                <p class="zuo"><a href="###">���л�����ӡ���ļ���ȫ��</a></p>
+                                <p class="zhong"><a href="###">博洋家纺</a></p>
+                                <p class="zuo"><a href="###">淡雅花朵式床品四件套</a></p>
+                                <p class="zuo"><a href="###">莴苣玖醉南五件套高档床品</a></p>
+                                <p class="zuo"><a href="###">梦中花活性印花四件套全棉</a></p>
                             </li>
                             <li>
                             	<div><a href="###"><img src="images/newproduct_3.jpg" /></a></div>
-                                <p class="zhong"><a href="###">����ҷ�</a></p>
-                                <p class="zuo"><a href="###">���Ż���ʽ��Ʒ�ļ���</a></p>
-                                <p class="zuo"><a href="###">ݫ�ľ���������׸ߵ���Ʒ</a></p>
-                                <p class="zuo"><a href="###">���л�����ӡ���ļ���ȫ��</a></p>
+                                <p class="zhong"><a href="###">博洋家纺</a></p>
+                                <p class="zuo"><a href="###">淡雅花朵式床品四件套</a></p>
+                                <p class="zuo"><a href="###">莴苣玖醉南五件套高档床品</a></p>
+                                <p class="zuo"><a href="###">梦中花活性印花四件套全棉</a></p>
                             </li>
                             <li>
                             	<div><a href="###"><img src="images/newproduct_3.jpg" /></a></div>
-                                <p class="zhong"><a href="###">��ά��</a></p>
-                                <p class="zuo"><a href="###">���Ż���ʽ��Ʒ�ļ���</a></p>
-                                <p class="zuo"><a href="###">ݫ�ľ���������׸ߵ���Ʒ</a></p>
-                                <p class="zuo"><a href="###">���л�����ӡ���ļ���ȫ��</a></p>
+                                <p class="zhong"><a href="###">纤维被</a></p>
+                                <p class="zuo"><a href="###">淡雅花朵式床品四件套</a></p>
+                                <p class="zuo"><a href="###">莴苣玖醉南五件套高档床品</a></p>
+                                <p class="zuo"><a href="###">梦中花活性印花四件套全棉</a></p>
                             </li>
                             <li>
                             	<div><a href="###"><img src="images/newproduct_3.jpg" /></a></div>
-                                <p class="zhong"><a href="###">����ҷ�</a></p>
-                                <p class="zuo"><a href="###">���Ż���ʽ��Ʒ�ļ���</a></p>
-                                <p class="zuo"><a href="###">ݫ�ľ���������׸ߵ���Ʒ</a></p>
-                                <p class="zuo"><a href="###">���л�����ӡ���ļ���ȫ��</a></p>
+                                <p class="zhong"><a href="###">博洋家纺</a></p>
+                                <p class="zuo"><a href="###">淡雅花朵式床品四件套</a></p>
+                                <p class="zuo"><a href="###">莴苣玖醉南五件套高档床品</a></p>
+                                <p class="zuo"><a href="###">梦中花活性印花四件套全棉</a></p>
                             </li>
                         </ul>
                         <div class="product_fen_content_2"><a class="ye_current" href="###">1</a><a href="###">2</a><a href="###">3</a><a href="###">4</a></div>
@@ -177,31 +177,31 @@ $(function(){
                     	<ul class="product_fen_content_1">
                         	<li>
                             	<div><a href="###"><img src="images/newproduct_1.jpg" /></a></div>
-                                <p class="zhong"><a href="###">��ά��</a></p>
-                                <p class="zuo"><a href="###">���Ż���ʽ��Ʒ�ļ���</a></p>
-                                <p class="zuo"><a href="###">ݫ�ľ���������׸ߵ���Ʒ</a></p>
-                                <p class="zuo"><a href="###">���л�����ӡ���ļ���ȫ��</a></p>
+                                <p class="zhong"><a href="###">纤维被</a></p>
+                                <p class="zuo"><a href="###">淡雅花朵式床品四件套</a></p>
+                                <p class="zuo"><a href="###">莴苣玖醉南五件套高档床品</a></p>
+                                <p class="zuo"><a href="###">梦中花活性印花四件套全棉</a></p>
                             </li>
                             <li>
                             	<div><a href="###"><img src="images/newproduct_1.jpg" /></a></div>
-                                <p class="zhong"><a href="###">��ά��</a></p>
-                                <p class="zuo"><a href="###">���Ż���ʽ��Ʒ�ļ���</a></p>
-                                <p class="zuo"><a href="###">ݫ�ľ���������׸ߵ���Ʒ</a></p>
-                                <p class="zuo"><a href="###">���л�����ӡ���ļ���ȫ��</a></p>
+                                <p class="zhong"><a href="###">纤维被</a></p>
+                                <p class="zuo"><a href="###">淡雅花朵式床品四件套</a></p>
+                                <p class="zuo"><a href="###">莴苣玖醉南五件套高档床品</a></p>
+                                <p class="zuo"><a href="###">梦中花活性印花四件套全棉</a></p>
                             </li>
                             <li>
                             	<div><a href="###"><img src="images/newproduct_1.jpg" /></a></div>
-                                <p class="zhong"><a href="###">��ά��</a></p>
-                                <p class="zuo"><a href="###">���Ż���ʽ��Ʒ�ļ���</a></p>
-                                <p class="zuo"><a href="###">ݫ�ľ���������׸ߵ���Ʒ</a></p>
-                                <p class="zuo"><a href="###">���л�����ӡ���ļ���ȫ��</a></p>
+                                <p class="zhong"><a href="###">纤维被</a></p>
+                                <p class="zuo"><a href="###">淡雅花朵式床品四件套</a></p>
+                                <p class="zuo"><a href="###">莴苣玖醉南五件套高档床品</a></p>
+                                <p class="zuo"><a href="###">梦中花活性印花四件套全棉</a></p>
                             </li>
                             <li>
                             	<div><a href="###"><img src="images/newproduct_1.jpg" /></a></div>
-                                <p class="zhong"><a href="###">����ҷ�</a></p>
-                                <p class="zuo"><a href="###">���Ż���ʽ��Ʒ�ļ���</a></p>
-                                <p class="zuo"><a href="###">ݫ�ľ���������׸ߵ���Ʒ</a></p>
-                                <p class="zuo"><a href="###">���л�����ӡ���ļ���ȫ��</a></p>
+                                <p class="zhong"><a href="###">博洋家纺</a></p>
+                                <p class="zuo"><a href="###">淡雅花朵式床品四件套</a></p>
+                                <p class="zuo"><a href="###">莴苣玖醉南五件套高档床品</a></p>
+                                <p class="zuo"><a href="###">梦中花活性印花四件套全棉</a></p>
                             </li>
                         </ul>
                         <div class="product_fen_content_2"><a class="ye_current" href="###">1</a><a href="###">2</a><a href="###">3</a><a href="###">4</a></div>
@@ -210,31 +210,31 @@ $(function(){
                     	<ul class="product_fen_content_1">
                         	<li>
                             	<div><a href="###"><img src="images/newproduct_2.jpg" /></a></div>
-                                <p class="zhong"><a href="###">��ά��</a></p>
-                                <p class="zuo"><a href="###">���Ż���ʽ��Ʒ�ļ���</a></p>
-                                <p class="zuo"><a href="###">ݫ�ľ���������׸ߵ���Ʒ</a></p>
-                                <p class="zuo"><a href="###">���л�����ӡ���ļ���ȫ��</a></p>
+                                <p class="zhong"><a href="###">纤维被</a></p>
+                                <p class="zuo"><a href="###">淡雅花朵式床品四件套</a></p>
+                                <p class="zuo"><a href="###">莴苣玖醉南五件套高档床品</a></p>
+                                <p class="zuo"><a href="###">梦中花活性印花四件套全棉</a></p>
                             </li>
                             <li>
                             	<div><a href="###"><img src="images/newproduct_2.jpg" /></a></div>
-                                <p class="zhong"><a href="###">��ά��</a></p>
-                                <p class="zuo"><a href="###">���Ż���ʽ��Ʒ�ļ���</a></p>
-                                <p class="zuo"><a href="###">ݫ�ľ���������׸ߵ���Ʒ</a></p>
-                                <p class="zuo"><a href="###">���л�����ӡ���ļ���ȫ��</a></p>
+                                <p class="zhong"><a href="###">纤维被</a></p>
+                                <p class="zuo"><a href="###">淡雅花朵式床品四件套</a></p>
+                                <p class="zuo"><a href="###">莴苣玖醉南五件套高档床品</a></p>
+                                <p class="zuo"><a href="###">梦中花活性印花四件套全棉</a></p>
                             </li>
                             <li>
                             	<div><a href="###"><img src="images/newproduct_2.jpg" /></a></div>
-                                <p class="zhong"><a href="###">��ά��</a></p>
-                                <p class="zuo"><a href="###">���Ż���ʽ��Ʒ�ļ���</a></p>
-                                <p class="zuo"><a href="###">ݫ�ľ���������׸ߵ���Ʒ</a></p>
-                                <p class="zuo"><a href="###">���л�����ӡ���ļ���ȫ��</a></p>
+                                <p class="zhong"><a href="###">纤维被</a></p>
+                                <p class="zuo"><a href="###">淡雅花朵式床品四件套</a></p>
+                                <p class="zuo"><a href="###">莴苣玖醉南五件套高档床品</a></p>
+                                <p class="zuo"><a href="###">梦中花活性印花四件套全棉</a></p>
                             </li>
                             <li>
                             	<div><a href="###"><img src="images/newproduct_2.jpg" /></a></div>
-                                <p class="zhong"><a href="###">��ά��</a></p>
-                                <p class="zuo"><a href="###">���Ż���ʽ��Ʒ�ļ���</a></p>
-                                <p class="zuo"><a href="###">ݫ�ľ���������׸ߵ���Ʒ</a></p>
-                                <p class="zuo"><a href="###">���л�����ӡ���ļ���ȫ��</a></p>
+                                <p class="zhong"><a href="###">纤维被</a></p>
+                                <p class="zuo"><a href="###">淡雅花朵式床品四件套</a></p>
+                                <p class="zuo"><a href="###">莴苣玖醉南五件套高档床品</a></p>
+                                <p class="zuo"><a href="###">梦中花活性印花四件套全棉</a></p>
                             </li>
                         </ul>
                         <div class="product_fen_content_2"><a class="ye_current" href="###">1</a><a href="###">2</a><a href="###">3</a><a href="###">4</a></div>
@@ -245,8 +245,8 @@ $(function(){
     </div>
 </div>
 <div class="april">
-	<div class="april_nav"><a href="about.html">��������</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="product.html">��Ʒ����</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="news.html">������Ѷ</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="client.html">�ͻ�����</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="vip.html">��Աר��</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="contact.html">��ϵ��ʽ</a><br />
-    ��Ȩ���У���Ӣ��̩����ó�����޹�˾&nbsp;&nbsp;��ַ�������������»��ܴ���4B10��&nbsp;&nbsp;&nbsp;�绰��010-65132366  010-65132366&nbsp;&nbsp;&nbsp;���棺010-65132366&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;������վ���裺��������</div>
+	<div class="april_nav"><a href="about.html">关于我们</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="product.html">产品中心</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="news.html">新闻资讯</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="client.html">客户服务</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="vip.html">会员专区</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="contact.html">联系方式</a><br />
+    版权所有：精英鸿泰国际贸易有限公司&nbsp;&nbsp;地址：海淀区大钟寺华杰大厦4B10室&nbsp;&nbsp;&nbsp;电话：010-65132366  010-65132366&nbsp;&nbsp;&nbsp;传真：010-65132366&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;北京网站建设：联合易网</div>
 </div>
 <script src="js/public.js"></script>
 <script src="js/clgai.js"></script>
